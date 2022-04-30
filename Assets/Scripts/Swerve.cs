@@ -6,12 +6,10 @@ public class Swerve : MonoBehaviour
 {
     SwerveControl swerveControl;
     float swerveSpeed = 1f;
-    GameObject playerObject;
-    PlayerControl control;
+    public GameObject playerObject;
+    public PlayerControl control;
     private void Awake()
     {
-        control = GameObject.Find("Player").GetComponent<PlayerControl>();
-        playerObject = GameObject.Find("Player");
         swerveControl = GetComponent<SwerveControl>();
     }
     private void Update()

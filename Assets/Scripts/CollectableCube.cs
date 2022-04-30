@@ -7,7 +7,7 @@ public class CollectableCube : MonoBehaviour
     public bool collectable;
     Collect collect;
     int index;
-    void Start()
+    void Awake()
     {
         collectable = false;
         collect = GameObject.Find("AddCube").GetComponent<Collect>();

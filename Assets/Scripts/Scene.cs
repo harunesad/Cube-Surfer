@@ -5,14 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Scene : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-    void Update()
-    {
-        
-    }
     public void SceneMan()
     {
         StartCoroutine(SceneManage());
